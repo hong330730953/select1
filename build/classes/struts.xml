@@ -14,7 +14,7 @@
 	
 	<package name="p_action" namespace="/" extends="struts-default">
 	  <action name="ad" class="p_action.Test_p_1">
-	  <result name="ok">/P_Page/P_main.jsp</result>
+	  <result name="ok" ></result>
 	  </action>
 	</package>
 	
