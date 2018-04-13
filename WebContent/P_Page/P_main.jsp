@@ -20,9 +20,9 @@
 	<body>
 		<div class="container_1">
 			<!-- Push Wrapper -->
+
 			<div class="mp-pusher" id="mp-pusher">
-			
-			<a href="#" id="trigger" class="menu-trigger">打开/关闭 菜单</a>
+					
 			<!-- mp-menu -->
 				<nav id="mp-menu" class="mp-menu">
 					<div class="mp-level">
@@ -114,11 +114,15 @@
 				</nav>
 				
 				<!-- /mp-menu -->
-
+				<div class="block block-40 clearfix">
+					<p><a href="#" id="trigger" class="menu-trigger"></a></p>
+				</div>
 
 
 				<div class="scroller"><!-- this is for emulating position fixed of the nav -->
 					<div class="scroller-inner">
+					
+					
 						<header class="codrops-header">
 							<h1>肇庆学院 <span>大学毕业论文设计管理系统</span></h1>
 						</header>

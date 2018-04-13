@@ -10,12 +10,12 @@
 		url('../fonts/codropsicons/codropsicons.svg#codropsicons') format('svg');
 }
 
-body {
-	background: #34495e;
-	color: #fff;
-	font-weight: 300;
-	font-family: 'Lato', Calibri, Arial, sans-serif;
-}
+/* body { */
+/* 	background: #34495e; */
+/* /* 	color: #fff; */ */
+/* 	font-weight: 300; */
+/* 	font-family: 'Lato', Calibri, Arial, sans-serif; */
+/* } */
 
 a {
 	text-decoration: none;
@@ -156,7 +156,7 @@ a:hover, a:focus {
 }
 
 .block-40 {
-	width: 40%;
+	width: 0%;
 }
 
 .block-60 {

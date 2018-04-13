@@ -22,7 +22,7 @@ html, body, .container_1, .scroller {
 .container_1 {
 	position: relative;
 	overflow: hidden;
-    background: #34495e;
+    /*background: #34495e;*/
 	
 }
 
@@ -34,12 +34,12 @@ html, body, .container_1, .scroller {
 
 .menu-trigger:before {
 	position: absolute;
-	top: 2px;
+	top: 7px;
 	left: 0;
 	width: 40px;
-	height: 6px;
-	background: #fff;
-	box-shadow: 0 6px #34495e, 0 12px #fff, 0 18px #34495e, 0 24px #fff;
+	height: 8px;
+	background: #34495e;
+	box-shadow: 0 6px #fff, 0 12px #34495e, 0 18px #fff, 0 24px #34495e;
 	content: '';
 }
 
