@@ -1,1 +1,7 @@
 /hibernate.cfg.out.xml
+/hibernate.cfg.xml
+/model/
+/struts.xml
+/util/
+/p_action/
+/p_dao/

@@ -10,17 +10,21 @@
 		<meta name="description" content="Multi-Level Push Menu: Off-screen navigation with multiple levels" />
 		<meta name="keywords" content="multi-level, menu, navigation, off-canvas, off-screen, mobile, levels, nested, transform" />
 		<meta name="author" content="Codrops" />
-		<link rel="stylesheet" type="text/css" href="../css/bootstrap.css"> 
+		
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
  		<link rel="stylesheet" type="text/css" href="../css/bootstrap-select.css"> 
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap-datetimepicker.min.css">  
+		
 		<link rel="shortcut icon" href="../../favicon.ico">
 		<link rel="stylesheet" type="text/css" href="../css/normalize.css" />
 		<link rel="stylesheet" type="text/css" href="../css/demo.css" />
 		<link rel="stylesheet" type="text/css" href="../css/icons.css" />
 		<link rel="stylesheet" type="text/css" href="../css/component.css" />
 		
-				<script type="text/javascript" src="../js/jquery-3.2.1.js"></script>
+		<script type="text/javascript" src="../js/jquery-3.2.1.js"></script>
 		<script type="text/javascript" src="../js/bootstrap.js"></script>
 		<script type="text/javascript" src="../js/bootstrap-select.js"></script>
+		<script type="text/javascript" src="../js/bootstrap-datetimepicker.js"></script>
 		<script src="../js/modernizr.custom.js"></script>
 	</head>
 	<body>
@@ -28,7 +32,7 @@
 			<!-- Push Wrapper -->
 			<div class="mp-pusher" id="mp-pusher">
 			<br>
-			<a href="#" id="trigger" class="menu-trigger">打开/关闭 菜单</a>
+			<a href="#" id="trigger" class="menu-trigger"></a>
 			<!-- mp-menu -->
 				<nav id="mp-menu" class="mp-menu">
 					<div class="mp-level">
@@ -125,15 +129,41 @@
 
 				<div class="scroller"><!-- this is for emulating position fixed of the nav -->
 					<div class="scroller-inner">
-						<header class="codrops-header">
-							<h1>肇庆学院 <span>大学毕业论文设计管理系统</span></h1>
-						</header>
-						<div class="content clearfix">
-<!-- 							<div class="block block-100" ></div> -->
-							
-						           设置学生选题时间
-							
-						</div>
+						 <div class="container">
+							<div class="row clearfix">
+								<div class="col-md-12 column">
+								<div class="page-header">
+									<h1>
+										肇庆学院 <small>大学毕业论文设计管理系统</small>    <button type="button" class="btn active btn-sm btn-info disabled">设置学生选题时间</button>
+									</h1>
+								</div>
+								<br><br>
+								<form action="ad!doa">
+								<div class="form-group col-sm-12 column">
+								<div class="form-group col-sm-3 column">
+								<label style="color: white">开始时间:</label>
+								<input type="text" id="Stime" name="ta.Stime" style="width: 205px"  value="2018-04-15 14:45" readonly class="form-control form_datetime ">
+								</div>	
+								<div class="form-group col-sm-3 column">
+								
+								<label style="color: white">截止时间:</label>
+								<input type="text" id="ta.Ftime" style="width: 205px"  value="2018-04-15 14:45" readonly class="form-control form_datetime ">
+								
+								 
+								 </div>
+								</div>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<button type="submit" class="btn btn-default btn-success">确定</button>
+								</FORM>
+								
+								
+								
+								</div>
+
+								
+
+							</div>
+							</div>
 					</div><!-- /scroller-inner -->
 				</div><!-- /scroller -->
                 
@@ -145,6 +175,12 @@
 		
 		<script src="../js/classie.js"></script>
 		<script src="../js/mlpushmenu.js"></script>
+			<script type="text/javascript">
+    $(".form_datetime").datetimepicker({
+    	todayBtn:  1,
+    	format: 'yyyy-mm-dd hh:ii'
+    	});
+</script> 
 		<script>
 			new mlPushMenu( document.getElementById( 'mp-menu' ), document.getElementById( 'trigger' ) );
 		</script>

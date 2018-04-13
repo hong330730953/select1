@@ -149,15 +149,35 @@
 										肇庆学院 <small>大学毕业论文设计管理系统</small>    <button type="button" class="btn active btn-sm btn-info disabled">设置老师出题时间</button>
 									</h1>
 								</div>
-								<input type="text">
+								<br><br>
+								<form action="">
+								<div class="form-group col-sm-12 column">
+								<div class="form-group col-sm-3 column">
+								<label style="color: white">开始时间:</label>
+								<input id="Stime" style="width: 205px"  value="2018-04-15 14:45" readonly class="form-control form_datetime ">
+								</div>	
+								<div class="form-group col-sm-3 column">
 								
-								<input size="16"  value="2012-06-15 14:45" readonly class="form_datetime">
+								<label style="color: white">截止时间:</label>
+								<input id="Ftime" style="width: 205px"  value="2018-04-15 14:45" readonly class="form-control form_datetime ">
 								
+								 
+								 </div>
+								</div>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<button type="submit" class="btn btn-default btn-success">确定</button>
+								</FORM>
+								
+								
+								
+								</div>
 
 								
 
 							</div>
 							</div>
+							
+							
 						</div>
 							
 <!-- 						</div> -->
@@ -173,7 +193,10 @@
 		<script src="../js/classie.js"></script>
 		<script src="../js/mlpushmenu.js"></script>
 		<script type="text/javascript">
-    $(".form_datetime").datetimepicker({format: 'yyyy-mm-dd hh:ii'});
+    $(".form_datetime").datetimepicker({
+    	todayBtn:  1,
+    	format: 'yyyy-mm-dd hh:ii'
+    	});
 </script> 
 		<script>
 			new mlPushMenu( document.getElementById( 'mp-menu' ), document.getElementById( 'trigger' ) );
