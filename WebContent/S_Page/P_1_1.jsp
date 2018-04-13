@@ -6,16 +6,13 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-		<title></title>
+		<title>题目审批</title>
 		<meta name="description" content="Multi-Level Push Menu: Off-screen navigation with multiple levels" />
 		<meta name="keywords" content="multi-level, menu, navigation, off-canvas, off-screen, mobile, levels, nested, transform" />
 		<meta name="author" content="Codrops" />
-		<link rel="shortcut icon" href="../../favicon.ico">
-		
-		<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+ 		<link rel="stylesheet" type="text/css" href="../css/bootstrap.css"> 
  		<link rel="stylesheet" type="text/css" href="../css/bootstrap-select.css"> 
-		<link rel="stylesheet" type="text/css" href="../css/bootstrap-datetimepicker.min.css"> 
-		
+		<link rel="shortcut icon" href="../../favicon.ico">
 		<link rel="stylesheet" type="text/css" href="../css/normalize.css" />
 		<link rel="stylesheet" type="text/css" href="../css/demo.css" />
 		<link rel="stylesheet" type="text/css" href="../css/icons.css" />
@@ -24,15 +21,7 @@
 		<script type="text/javascript" src="../js/jquery-3.2.1.js"></script>
 		<script type="text/javascript" src="../js/bootstrap.js"></script>
 		<script type="text/javascript" src="../js/bootstrap-select.js"></script>
-		<script type="text/javascript" src="../js/bootstrap-datetimepicker.js"></script>
-		
 		<script src="../js/modernizr.custom.js"></script>
-		
-	     <script type="text/javascript">
-	     $('#datetimepicker').datetimepicker();
-	     </script>
-		
-		
 	</head>
 	<body>
 		<div class="container_1">
@@ -52,7 +41,7 @@
 									<h2 class="icon icon-display">论文管理</h2>
 									<ul>
 										<li class="icon ">
-											<a class="icon icon-phone" href="P_1_1.jsp">题目审批</a>
+											<a class="icon icon-phone" href="#">题目审批</a>
 										</li>
 										<li class="icon ">
 											<a class="icon icon-tv" href="P_1_2.jsp">选题管理</a>
@@ -114,7 +103,7 @@
 										<div class="mp-level">
 											<h2 class="icon icon-shop">设置系统时间</h2>
 											<ul>
-												<li class="icon"><a class="icon icon-t-shirt" href="#">设置老师出题时间</a>
+												<li class="icon"><a class="icon icon-t-shirt" href="P_4_1_1.jsp">设置老师出题时间</a>
 												</li>
 												<li class="icon"><a class="icon icon-t-shirt" href="P_4_1_2.jsp">设置学生选题时间</a>
 												</li>
@@ -135,34 +124,45 @@
 
 
 				<div class="scroller"><!-- this is for emulating position fixed of the nav -->
-					<div class="scroller-inner">
-						
-<!-- 						<div class="content clearfix"> -->
-<!-- 							<div class="block block-100" ></div> -->
-							
-<!-- 						       设置老师出题时间 -->
-                          <div class="container">
-							<div class="row clearfix">
-								<div class="col-md-12 column">
-								<div class="page-header">
-									<h1>
-										肇庆学院 <small>大学毕业论文设计管理系统</small>    <button type="button" class="btn active btn-sm btn-info disabled">设置老师出题时间</button>
-									</h1>
-								</div>
-							
-								
-								<input size="16"  value="2012-06-15 14:45" readonly class="form-control form_datetime">
-								
+				<div class="scroller-inner">
 
-								
+<!-- 					<div class="content clearfix"> -->
+					
+<div class="container">
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+			<div class="page-header">
+				<h1>
+					示例页眉标题的 <small>潜台词</small>
+				</h1>
+			</div>
+			<div class="col-md-5 column">
+			<div class="list-group">
+				 <a href="#" class="list-group-item active">家</a>
+				<div class="list-group-item">
+					列表标题
+				</div>
+				<div class="list-group-item">
+					<h4 class="list-group-item-heading">
+						列出组项目标题
+					</h4>
+					<p class="list-group-item-text">
+						...
+					</p>
+				</div>
+				<div class="list-group-item">
+					 <span class="badge">14</span> 帮助
+				</div> <a class="list-group-item active"> <span class="badge">14</span> 帮助</a>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
 
-							</div>
-							</div>
-						</div>
-							
-<!-- 						</div> -->
-					</div><!-- /scroller-inner -->
-				</div><!-- /scroller -->
+<!-- 					</div> -->
+				</div>
+				<!-- /scroller-inner -->
+			</div><!-- /scroller -->
                 
 			</div><!-- /pusher -->
 			
@@ -172,9 +172,6 @@
 		
 		<script src="../js/classie.js"></script>
 		<script src="../js/mlpushmenu.js"></script>
-		<script type="text/javascript">
-    $(".form_datetime").datetimepicker({format: 'yyyy-mm-dd hh:ii'});
-</script> 
 		<script>
 			new mlPushMenu( document.getElementById( 'mp-menu' ), document.getElementById( 'trigger' ) );
 		</script>
