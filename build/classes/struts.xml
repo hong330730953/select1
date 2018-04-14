@@ -12,9 +12,11 @@
 		
 	</package>
 	
-	<package name="p_action" namespace="/" extends="struts-default">
-	  <action name="ad" class="p_action.Test_p_1">
-	  <result name="ok">/P_Page/P_main.jsp</result>
+	<package name="p_action" namespace="/" extends="struts-default,json-default">
+	  <action name="setT" class="p_action.Time_action">
+	   <result name="ok" type="json">
+                <param name="root">result</param>
+            </result>
 	  </action>
 	</package>
 	

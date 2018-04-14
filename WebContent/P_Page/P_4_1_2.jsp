@@ -26,6 +26,50 @@
 		<script type="text/javascript" src="../js/bootstrap-select.js"></script>
 		<script type="text/javascript" src="../js/bootstrap-datetimepicker.js"></script>
 		<script src="../js/modernizr.custom.js"></script>
+		
+		
+		
+		
+		<script type="text/javascript">
+		
+		  function setTime() {
+              var Stime = $('#tStime').val();
+              var Ftime = $('#tFtime').val();
+               alert(Stime);
+               alert(Ftime);
+               
+               var start = new Date(Stime.replace("-", "/").replace("-", "/"));  
+               var end = new Date(Ftime.replace("-", "/").replace("-", "/"));  
+               if(end<start){  
+            	   alert("结束时间比开始时间早");
+                   return false;    
+               } 
+               
+          $.ajax({ 
+              type : "post",
+              url : "setT!setTime2",
+              data : {
+            	  Stime : Stime,
+            	  Ftime : Ftime
+              },
+              dataType:"json",
+      
+              success : function(data) {
+                  alert(data);
+                   $('#Stime').val("");
+                   $('#Ftime').val("");
+                   location.reload();
+              },
+              error : function() {
+                  alert("设置失败");
+              }
+          });
+      }
+		
+		</script>
+		
+		
+		
 	</head>
 	<body>
 		<div class="container_1">
@@ -142,18 +186,18 @@
 								<div class="form-group col-sm-12 column">
 								<div class="form-group col-sm-3 column">
 								<label style="color: white">开始时间:</label>
-								<input type="text" id="Stime" name="ta.Stime" style="width: 205px"  value="2018-04-15 14:45" readonly class="form-control form_datetime ">
+								<input type="text" id="tStime" name="Stime" style="width: 205px"   readonly class="form-control form_datetime ">
 								</div>	
 								<div class="form-group col-sm-3 column">
 								
 								<label style="color: white">截止时间:</label>
-								<input type="text" id="ta.Ftime" style="width: 205px"  value="2018-04-15 14:45" readonly class="form-control form_datetime ">
+								<input type="text" id="tFtime" style="width: 205px"  readonly class="form-control form_datetime ">
 								
 								 
 								 </div>
 								</div>
 								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-								<button type="submit" class="btn btn-default btn-success">确定</button>
+								<button onclick="setTime()" type="button" id="time_btn" class="btn btn-default btn-success">确定</button>
 								</FORM>
 								
 								
