@@ -31,6 +31,44 @@
 	     <script type="text/javascript">
 	     $('#datetimepicker').datetimepicker();
 	     </script>
+	     
+	     <script type="text/javascript">
+		
+		  function setTime() {
+              var Stime = $('#tStime').val();
+              var Ftime = $('#tFtime').val();
+               alert(Stime);
+               alert(Ftime);
+               
+               var start = new Date(Stime.replace("-", "/").replace("-", "/"));  
+               var end = new Date(Ftime.replace("-", "/").replace("-", "/"));  
+               if(end<start){  
+            	   alert("结束时间比开始时间早");
+                   return false;    
+               } 
+               
+          $.ajax({ 
+              type : "post",
+              url : "setT!setTime1",
+              data : {
+            	  Stime : Stime,
+            	  Ftime : Ftime
+              },
+              dataType:"json",
+      
+              success : function(data) {
+                  alert(data);
+                   $('#Stime').val("");
+                   $('#Ftime').val("");
+                   location.reload();
+              },
+              error : function() {
+                  alert("设置失败");
+              }
+          });
+      }
+		
+		</script>
 		
 		
 	</head>
@@ -159,19 +197,23 @@
 								<div class="form-group col-sm-12 column">
 								<div class="form-group col-sm-3 column">
 								<label style="color: white">开始时间:</label>
-								<input id="Stime" style="width: 205px"  value="2018-04-15 14:45" readonly class="form-control form_datetime ">
+								<input id="tStime" style="width: 205px"  readonly class="form-control form_datetime ">
 								</div>	
 								<div class="form-group col-sm-3 column">
 								
 								<label style="color: white">截止时间:</label>
+<<<<<<< HEAD
+								<input id="tFtime" style="width: 205px"  readonly class="form-control form_datetime ">
+=======
 								<input id="Ftime" style="width: 205px"  value="2018-04-15 14:45" readonly class="form-control form_datetime ">
 >>>>>>> 4b938c7b3df0f3c272200648ab1f7ea494bc9e83
+>>>>>>> c4d232258c5ecb8d9dbb20a778195c279b746fc6
 								
 								 
 								 </div>
 								</div>
 								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-								<button type="submit" class="btn btn-default btn-success">确定</button>
+								<button type="button" onclick="setTime()" class="btn btn-default btn-success">确定</button>
 								</FORM>
 								
 								
