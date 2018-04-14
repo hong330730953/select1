@@ -18,7 +18,7 @@
 		<script src="../js/modernizr.custom.js"></script>
 	</head>
 	<body>
-		
+		<div class="container_1">
 			<!-- Push Wrapper -->
 			<div class="mp-pusher" id="mp-pusher">
 			
@@ -70,6 +70,9 @@
 
 				<div class="scroller"><!-- this is for emulating position fixed of the nav -->
 					<div class="scroller-inner">
+						<header class="codrops-header">
+							<h1>肇庆学院 <span>大学毕业论文设计管理系统</span></h1>
+						</header>
 						<div class="content clearfix">
 <!-- 							<div class="block block-100" ></div> -->
 							
@@ -78,38 +81,30 @@
 		<div class="col-md-12 column">
 			<div class="page-header">
 				<h1>
-					基本信息
+					Example page header <small>Subtext for header</small>
 				</h1>
 			</div>
-			<form class="form-horizontal" role="form">
-				<div class="form-group">
-					 <label for="inputEmail3" class="col-sm-2 control-label">学号</label>
-					<div class="col-sm-10">
-						<input type="email" class="form-control" id="inputEmail3" />
-					</div>
-				</div>	
-				<div class="form-group">
-					 <label for="inputPassword3" class="col-sm-2 control-label">密码</label>
-					<div class="col-sm-10">
-						<input type="password" class="form-control" id="inputPassword3" />
-					</div>
-				</div>
-				<div class="form-group">
-					<div class="col-sm-offset-2 col-sm-10">
-						<div class="checkbox">
-							 <label><input type="checkbox" />记住我</label>
+			<div class="media">
+				 <a href="#" class="pull-left"><img src="http://ibootstrap-file.b0.upaiyun.com/lorempixel.com/64/64/default.jpg" class="media-object" alt='' /></a>
+				<div class="media-body">
+					<h4 class="media-heading">
+						Nested media heading
+					</h4> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+					<div class="media">
+						 <a href="#" class="pull-left"><img src="http://ibootstrap-file.b0.upaiyun.com/lorempixel.com/64/64/default.jpg" class="media-object" alt='' /></a>
+						<div class="media-body">
+							<h4 class="media-heading">
+								Nested media heading
+							</h4> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
 						</div>
 					</div>
 				</div>
-				<div class="form-group">
-					<div class="col-sm-offset-2 col-sm-10">
-						 <button type="submit" class="btn btn-default">签到</button>
-					</div>
-				</div>
-			</form>
+			</div>
 		</div>
 	</div>
 </div>
+							
+						</div>
 					</div><!-- /scroller-inner -->
 				</div><!-- /scroller -->
                 

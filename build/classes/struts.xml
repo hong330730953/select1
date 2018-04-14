@@ -7,13 +7,7 @@
 
 	
 	<package name="studentInfo" namespace="/" extends="struts-default">
-		<action name="student" class="action.StudentAction">
-			<result name="success">/S_Page/S_main.jsp</result>
-			<result name="error">/S_Page/S_login.jsp</result>
-			<result name="logout" type="redirect">/S_Page/S_login.jsp</result>
-			<result name="turnto">{mainPage}</result>
-			<result name="save" type="redirectAction">student!list</result>
-		</action>
+		
 		
 		
 	</package>
