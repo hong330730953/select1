@@ -44,19 +44,19 @@
 								</div>
 							</li>
 						<!-- 论文选题 -->
-							<li class="icon icon-arrow-left">
-								<a class="icon icon-news" href="S_select.jsp">论文选题</a>
+							<li>
+								<a class="icon icon-tv" href="S_select.jsp">论文选题</a>
 							</li>
 						<!-- 信息浏览 -->	
-							<li class="icon icon-arrow-left">
+							<li>
 								<a class="icon icon-news" href="S_message.jsp">信息浏览</a>
 							</li>
 						<!-- 申请答辩 -->
-							<li class="icon icon-arrow-left">
-								<a class="icon icon-shop" href="S_apply.jsp">申请答辩</a>
+							<li>
+								<a class="icon icon-camera" href="S_apply.jsp">申请答辩</a>
 							</li>
 						<!-- 查看成绩 -->
-							<li class="icon icon-arrow-left">
+							<li>
 								<a class="icon icon-shop" href="S_score.jsp">查看成绩</a>
 							</li>
 							<li><a class="icon icon-photo" href="#">退出系统</a></li>
@@ -77,31 +77,7 @@
 <!-- 							<div class="block block-100" ></div> -->
 							
 						     <div class="container">
-	<div class="row clearfix">
-		<div class="col-md-12 column">
-			<div class="page-header">
-				<h1>
-					Example page header <small>Subtext for header</small>
-				</h1>
-			</div>
-			<div class="media">
-				 <a href="#" class="pull-left"><img src="http://ibootstrap-file.b0.upaiyun.com/lorempixel.com/64/64/default.jpg" class="media-object" alt='' /></a>
-				<div class="media-body">
-					<h4 class="media-heading">
-						Nested media heading
-					</h4> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
-					<div class="media">
-						 <a href="#" class="pull-left"><img src="http://ibootstrap-file.b0.upaiyun.com/lorempixel.com/64/64/default.jpg" class="media-object" alt='' /></a>
-						<div class="media-body">
-							<h4 class="media-heading">
-								Nested media heading
-							</h4> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+						     ${currentUser.name }
 </div>
 							
 						</div>

@@ -18,80 +18,28 @@
 		<script src="../js/modernizr.custom.js"></script>
 	</head>
 	<body>
-		
-			<!-- Push Wrapper -->
-			<div class="mp-pusher" id="mp-pusher">
-			
-			<a href="#" id="trigger" class="menu-trigger">打开/关闭 菜单</a>
-			<!-- mp-menu -->
-				<nav id="mp-menu" class="mp-menu">
-					<div class="mp-level">
-						<h2 class="icon icon-world">系统</h2>
-						<ul>
-						<!-- 个人信息 -->
-							<li class="icon icon-arrow-left">
-								<a class="icon icon-display" href="#">个人信息</a>
-								<div class="mp-level">
-									<h2 class="icon icon-display">个人信息</h2>
-									<ul>
-										<li class="icon ">
-											<a class="icon icon-phone" href="S_person.jsp">基本信息</a>
-										</li>
-										<li class="icon ">
-											<a class="icon icon-tv" href="S_change.jsp">修改密码</a>
-										</li>
-									</ul>
-								</div>
-							</li>
-						<!-- 论文选题 -->
-							<li>
-								<a class="icon icon-tv" href="S_select.jsp">论文选题</a>
-							</li>
-						<!-- 信息浏览 -->	
-							<li>
-								<a class="icon icon-news" href="S_message.jsp">信息浏览</a>
-							</li>
-						<!-- 申请答辩 -->
-							<li>
-								<a class="icon icon-camera" href="S_apply.jsp">申请答辩</a>
-							</li>
-						<!-- 查看成绩 -->
-							<li>
-								<a class="icon icon-shop" href="S_score.jsp">查看成绩</a>
-							</li>
-							<li><a class="icon icon-photo" href="#">退出系统</a></li>
-						</ul>
-					</div>
-				</nav>
-				
-				<!-- /mp-menu -->
-
-
-
 				<div class="scroller"><!-- this is for emulating position fixed of the nav -->
 					<div class="scroller-inner">
 						<div class="content clearfix">
-<!-- 							<div class="block block-100" ></div> -->
-							
-						     <div class="container">
+						<div class="container">
 	<div class="row clearfix">
 		<div class="col-md-12 column">
 			<div class="page-header">
 				<h1>
-					基本信息
+					学生登陆
 				</h1>
 			</div>
-			<form class="form-horizontal" role="form">
+			<form class="form-horizontal" role="form" action="student!login" method="post">
 				<div class="form-group">
-					 <label for="inputEmail3" class="col-sm-2 control-label">学号</label>
+					 <label for="inputText3" class="col-sm-2 control-label">学号</label>
 					<div class="col-sm-10">
-						<input type="email" class="form-control" id="inputEmail3" />
+						<input type="text" class="form-control" id="student.id" name="student.id" />
 					</div>
-				</div>	
+				</div>
 				<div class="form-group">
 					 <label for="inputPassword3" class="col-sm-2 control-label">密码</label>
 					<div class="col-sm-10">
-						<input type="password" class="form-control" id="inputPassword3" />
+						<input type="password" class="form-control" id="student.pwd" name="student.pwd" />
 					</div>
 				</div>
 				<div class="form-group">
@@ -103,7 +51,8 @@
 				</div>
 				<div class="form-group">
 					<div class="col-sm-offset-2 col-sm-10">
-						 <button type="submit" class="btn btn-default">签到</button>
+						 <button type="submit" class="btn btn-default">登陆</button>
+						 <button type="reset" class="btn btn-default">重置</button>
 					</div>
 				</div>
 			</form>
@@ -124,5 +73,10 @@
 		<script>
 			new mlPushMenu( document.getElementById( 'mp-menu' ), document.getElementById( 'trigger' ) );
 		</script>
+		<script>
+	if('${error}'!=''){
+		alert('${error}');
+	}
+</script>
 	</body>
 </html>

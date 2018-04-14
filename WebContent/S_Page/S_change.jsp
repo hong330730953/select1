@@ -44,19 +44,19 @@
 								</div>
 							</li>
 						<!-- 论文选题 -->
-							<li class="icon icon-arrow-left">
-								<a class="icon icon-news" href="S_select.jsp">论文选题</a>
+							<li>
+								<a class="icon icon-tv" href="S_select.jsp">论文选题</a>
 							</li>
 						<!-- 信息浏览 -->	
-							<li class="icon icon-arrow-left">
+							<li>
 								<a class="icon icon-news" href="S_message.jsp">信息浏览</a>
 							</li>
 						<!-- 申请答辩 -->
-							<li class="icon icon-arrow-left">
-								<a class="icon icon-shop" href="S_apply.jsp">申请答辩</a>
+							<li>
+								<a class="icon icon-camera" href="S_apply.jsp">申请答辩</a>
 							</li>
 						<!-- 查看成绩 -->
-							<li class="icon icon-arrow-left">
+							<li>
 								<a class="icon icon-shop" href="S_score.jsp">查看成绩</a>
 							</li>
 							<li><a class="icon icon-photo" href="#">退出系统</a></li>

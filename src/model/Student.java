@@ -25,7 +25,6 @@ public class Student {
 	private int disable;			//0-无效 1-有效
 	
 	private Clazz clazz;
-	private Subject subject;
 	
 	
 	
@@ -103,12 +102,10 @@ public class Student {
 		this.clazz = clazz;
 	}
 	
-	@OneToOne(mappedBy = "student")
-	public Subject getSubject() {
-		return subject;
-	}
-	public void setSubject(Subject subject) {
-		this.subject = subject;
+	
+	@Override
+	public String toString() {
+		return "Student [id=" + id + ", pwd=" + pwd + "]";
 	}
 	
 	
