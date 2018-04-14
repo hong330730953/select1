@@ -1,11 +1,13 @@
 package p_action;
 
+import org.apache.struts2.interceptor.ServletRequestAware;
+
 import com.opensymphony.xwork2.ActionSupport;
 
 import model.Timetable;
 import p_dao.TimeDao;
 
-public class Test_p_1 extends ActionSupport{
+public class Test_p_1 extends ActionSupport {
 
 	/**
 	 * 
