@@ -1,10 +1,17 @@
 package model;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
+
+import org.hibernate.annotations.Cascade;
+import org.hibernate.annotations.CascadeType;
 
 @Entity
 @Table(name="t_teacher")
@@ -13,8 +20,6 @@ public class Teacher {
 	private  String id;                  //用户名
 	private  String name;				//姓名
 	private String pwd;					//密码
-	//private  int  teachtitleId;       //职称ID
-	//private int officeId;                //办公室ID
 	private String major;				//专业
 	private int degreeId;             //学位
 	private String gender;			//性别
@@ -24,7 +29,7 @@ public class Teacher {
 	private String ip;					//最近一次登陆IP
 	private int disable;			//0-无效 1-有效
 	
-	private Subject subject;
+	private List<Subject1> subject1List=new ArrayList<Subject1>();
 	
 	@Id
 	@Column(name="id",unique=true,nullable=false,length=40)
@@ -96,12 +101,13 @@ public class Teacher {
 		return major;
 	}
 	
-	@OneToOne(mappedBy = "teacher")
-	public Subject getSubject() {
-		return subject;
+	@OneToMany(mappedBy="teacher")
+	@Cascade(CascadeType.DELETE)
+	public List<Subject1> getSubject1List() {
+		return subject1List;
 	}
-	public void setSubject(Subject subject) {
-		this.subject = subject;
+	public void setSubject1List(List<Subject1> subject1List) {
+		this.subject1List = subject1List;
 	}
 	
 	

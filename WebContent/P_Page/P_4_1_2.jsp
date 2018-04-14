@@ -26,6 +26,7 @@
 		<script type="text/javascript" src="../js/bootstrap-select.js"></script>
 		<script type="text/javascript" src="../js/bootstrap-datetimepicker.js"></script>
 		<script src="../js/modernizr.custom.js"></script>
+<<<<<<< HEAD
 		
 		
 		
@@ -71,6 +72,40 @@
 		
 		
 	</head>
+=======
+
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("#btn_11").click(function() {
+			var Stime = $('#Stime').attr("value");
+			var Ftime = $('#Ftime').attr("value");
+             
+			 $.ajax({
+				url : 'ad!doa',
+				type : 'POST',
+				data : {
+					Stime : Stime,
+					Ftime :Ftime
+					
+				},
+				dataType : 'json',
+				success : function(data) {
+					alert("成功");
+				}
+			});
+			
+		});
+	});
+</script>
+
+
+
+
+
+
+</head>
+>>>>>>> c4d232258c5ecb8d9dbb20a778195c279b746fc6
 	<body>
 		<div class="container_1">
 			<!-- Push Wrapper -->
@@ -191,13 +226,21 @@
 								<div class="form-group col-sm-3 column">
 								
 								<label style="color: white">截止时间:</label>
+<<<<<<< HEAD
 								<input type="text" id="tFtime" style="width: 205px"  readonly class="form-control form_datetime ">
+=======
+								<input type="text" name="ta.Ftime" id="Ftime" style="width: 205px"  value="2018-04-15 14:45" readonly class="form-control form_datetime ">
+>>>>>>> c4d232258c5ecb8d9dbb20a778195c279b746fc6
 								
 								 
 								 </div>
 								</div>
 								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<<<<<<< HEAD
 								<button onclick="setTime()" type="button" id="time_btn" class="btn btn-default btn-success">确定</button>
+=======
+								<button type="button" id="btn_11" class="btn btn-default btn-success">确定</button>
+>>>>>>> c4d232258c5ecb8d9dbb20a778195c279b746fc6
 								</FORM>
 								
 								
